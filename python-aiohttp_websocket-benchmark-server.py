@@ -59,7 +59,8 @@ class Server():
         Sends initial timestamp and asynchronously awaits for incoming messages
 
         :param request: Information on the client trying to connect
-        :return: void
+        :return: ws
+        :rtype: aiohttp.web.WebSocketResponse
 
         """
         ws = web.WebSocketResponse()
