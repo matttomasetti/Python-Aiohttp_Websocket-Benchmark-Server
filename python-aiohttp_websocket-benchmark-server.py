@@ -10,7 +10,7 @@ class Server():
     """
 
     @staticmethod
-    def get_timestamp(self):
+    def get_timestamp():
         """
 
         Returns the current unix timestamp of the server
@@ -90,7 +90,7 @@ Sets the callback function, host, and port,
 as well as starts the loop the server runs in
 
 """
-server = Server
+server = Server()
 app = web.Application()
 app.add_routes([web.get('/', server.wshandle)])
 
